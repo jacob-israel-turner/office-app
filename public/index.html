@@ -11,7 +11,10 @@
 
     <div id="container">
       <div ng-controller="MainController">
-      {{test}}
+        <input type='text' ng-model='filter' placeholder='Search!'>
+        <div ng-repeat='item in cheats | filter: filter' ng-click='insertFormula(item)'>
+          {{item.text}}
+        </div>
       </div>
     </div>
 
