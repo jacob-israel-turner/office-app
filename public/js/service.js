@@ -104,7 +104,7 @@ app.service('mainService', function() {
 	for(var key in cheats.numberic){
 		newCheats.push({
 			name: key,
-			text: cheats[key]
+			text: cheats.numberic[key]
 		})
 	}
 

@@ -4,18 +4,19 @@
     <title>cheet</title>
     <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     
-    <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="style.css" title="no title" charset="utf-8">
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js" type="application/javascript"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="4.css">
 
     <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/Office.js" type="application/javascript"></script> 
   </head>
   <body>
 
-    <div id="container">
+    <div id="container" class='container'>
       <div ng-controller="MainController">
-        <input type='text' ng-model='filter' placeholder='Search!'>
+        <input class="form-control" type='text' ng-model='filter' placeholder='Search!'>
         <div ng-repeat='item in cheats | filter: filter' ng-click='insertFormula(item)'>
           {{item.name}}<br />
           {{item.text}}
