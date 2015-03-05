@@ -15,7 +15,9 @@
       <div ng-controller="MainController">
         <input type='text' ng-model='filter' placeholder='Search!'>
         <div ng-repeat='item in cheats | filter: filter' ng-click='insertFormula(item)'>
+          {{item.name}}<br />
           {{item.text}}
+          <hr>
         </div>
       </div>
     </div>
