@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <head ng-app="cheet">
+  <head>
     <title>cheet</title>
     <link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
     <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js" type="application/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/Office.js" type="application/javascript"></script>
+
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/Office.js" type="application/javascript"></script> 
   </head>
-  <body ng-controller="MainController">
+  <body>
 
     <div id="container">
-      {{test}}
+      <div ng-controller="MainController">
+        {{test}}
+      </div>
     </div>
 
 
