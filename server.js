@@ -9,9 +9,8 @@ var options = {
 }
 
 
-app.use(function(req, res){
-	res.send('Helllooooo!')
-})
+app.use('/', express.static(__dirname + '/public'));
+
 
 var server = https.createServer(options, app).listen(9001, function(){
 	console.log('Now listening safely on port 9001')
